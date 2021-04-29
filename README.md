@@ -18,13 +18,14 @@ A Cash Register Program
 
 Solution and Source Code available @ Cashregsiter.js in the repo
 
-
 ### Task 3
 
 An Exercise Tracker API or Microservice
 
 [Question](https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/exercise-tracker)
 
+[Solution](https://replit.com/@amarnathreddy09/boilerplate-project-exercisetracker)
 
+Source code available @ Exercisetracker folder in the repo
 
 
