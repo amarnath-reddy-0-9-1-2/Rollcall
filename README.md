@@ -24,7 +24,7 @@ An Exercise Tracker API or Microservice
 
 [Question](https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/exercise-tracker)
 
-[Solution](https://replit.com/@amarnathreddy09/boilerplate-project-exercisetracker)
+[Solution](https://boilerplate-project-exercisetracker.amarnathreddy09.repl.co/)
 
 Source code available @ Exercisetracker folder in the repo
 
