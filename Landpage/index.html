@@ -1,220 +1,222 @@
-  <head>
-    <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="index.js"></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-  </head>
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+<head>
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="index.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
 
-  <body>
-    <div id = 'page-wrapper'>
-      <div class = "top-section">
-        <header id='header'>
-          <div class="logo">
-            <img
-              id="header-img"
-              src="https://vo.shgstatic.com/dev/public/article/WarnerBros-Logo-OLD.png"
-            />
-            <div class="brand-name">Warner Bros Pictures</div>
-          </div>
-          <nav id="nav-bar">
-            <ul>
-              <li><a class="nav-link" href="#vedio-section">Trending</a></li>
-              <li><a class="nav-link" href="#movie-section">Movies</a></li>
-              <li><a class="nav-link" href="#award-section">Achievements</a></li>
-              <li><a class="nav-link" href="#page-wrapper">SignIn</a></li>
-            </ul>
-          </nav> 
-        </header>
-        <hr class="seperator">
-      </div>
-
-      <div id="slideshow">
-
-        <div class="Slides fade">
-          <img src="https://irs.www.warnerbros-india.com/hero-banner-v2-tablet-jpeg/movies/media/browser/Godzilla_vs_Kong_hero_0.jpg">
-          <div class="text">Coming Soon</div>
-        </div>
-
-        <div class="Slides fade">
-          <img src="https://irs.www.warnerbros-india.com/hero-banner-v2-tablet-jpeg/banner/media/browser/Mortal_Kombat_Hero_2.jpg">
-          <div class="text">Available in Cinemas near you</div>
-        </div>
-
-        <div class="Slides fade">
-          <img src="https://irs.www.warnerbros-india.com/hero-banner-v2-tablet-png/movies/media/browser/tom_jerry_hero.png">
-          <div class="text">Releasing on 2nd of May</div>
-        </div>
-
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-
-      </div>
-      <br>
-
-      <div class = "dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-      
-      <div id = "vedio-section">
-        <h1>Trending</h1>
-        <div class="vedio-bar">
-          <div class="vedio">
-            <iframe id="video" src="https://www.youtube.com/embed/odM92ap8_c0" frameborder="0" allowfullscreen></iframe>
-            <h1>Godzilla vs kong Trailer</h1>
-          </div>
-          <div class="vedio">
-            <iframe id="video" src="https://www.youtube.com/embed/AZGcmvrTX9M" frameborder="0" allowfullscreen></iframe>
-            <h1>Tenet Trailer</h1>
-          </div>
-          <div class="vedio">
-            <iframe id="video" src="https://www.youtube.com/embed/d2f2bIjvgnI" frameborder="0" allowfullscreen></iframe>
-            <h1>Tom and Jerry Trailer</h1>
-           </div>
-           <div class="vedio">
-            <iframe id="video" src="https://www.youtube.com/embed/NLOp_6uPccQ" frameborder="0" allowfullscreen></iframe>
-            <h1>The Batman Trailer</h1>
-           </div>
-        </div> 
-      </div>
-
-      <div id="movie-section">
-        <h1>Movies</h1>
-        <div class = movie-bar>
-          <div class="movie">
-            <div class="poster">
-              <img class="mov-pic" src = "https://images-na.ssl-images-amazon.com/images/I/410yY%2BU925L._AC_.jpg">
-              <h1 class="book">Available Soon</h1>
-            </div>
-            <h1>Dunkirk 2021</h1>
-          </div>
-          <div class="movie">
-            <div class="poster">
-              <img class="mov-pic" src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQr8TLcGyFZmLsJSNZ3M_8CO2M9YbnucnpGTs6u2erH-SveV1O2">
-              <h1 class="book">Book Tickets</h1>
-            </div>
-            <h1>Justice League 2016</h1>
-          </div>
-          <div class="movie">
-            <div class="poster">
-              <img class="mov-pic" src = "https://static1.colliderimages.com/wordpress/wp-content/uploads/inception_poster_alternate-405x600.jpg?q=50&fit=crop&w=405&dpr=1.5">
-              <h1 class="book">Book Tickets</h1>
-            </div>
-            <h1>Inception 2010</h1>
-          </div>
-          <div class="movie">
-            <div class="poster">
-              <img class="mov-pic" src = "https://www.joblo.com/assets/images/joblo/posters/2019/08/joker-poster-main2.jpg">
-              <h1 class="book">Book Tickets</h1>
-            </div>
-            <h1>Joker 2020</h1>
-          </div>
-          <div class="movie">
-            <div class="poster">
-              <img class="mov-pic" src = "https://m.media-amazon.com/images/M/MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_.jpg">
-              <h1 class="book">Available Soon</h1>
-            </div>
-            <h1>Gravity 2018</h1>
-          </div>
-        </div>
-      </div>
-
-      <div id = "award-section">
-        <h1>Achievements</h1>
-        <div class="award-bar">
-          <div class="award">
-            <h1>Joaquin Phoenix has won the Academy Award for Best Actor thanks to his acclaimed performance in Todd Phillips’ 
-              “Joker.” The revisionist comic book drama stars Phoenix as Arthur Fleck, a social outcast whose shattered dreams of 
-              being a hit stand-up comedian lead him down a dark path to becoming the infamous Batman villain. Phoenix’s Oscar makes 
-              him the second performer to win an Academy Award for playing the Joker after Heath Ledger, who won the Best Supporting 
-              Actor trophy for playing the character in Christopher Nolan’s “The Dark Knight.” “Joker’ received a total of 11 Oscar nominations, 
-              including Best Picture and Best Director, making it the most nominated film at the 92nd Academy Awards. With Phoenix’s win, 
-              it has claimed two statuettes: “Joker” composer Hildur Guðnadóttir won the Oscar for Best Original Score.</h1>
-          </div>
-          <div class="award">
-            <h1>Inception is a 2010 science fiction heist film written, co-produced, and directed by Christopher Nolan. 
-              The film features an ensemble cast of Oscar nominees and winners such as Leonardo DiCaprio, Marion Cotillard, Elliot Page,
-               and Michael Caine as they travel into the unconscious minds of other people to secretly extract valuable commercial
-                information while the target is asleep and dreaming. Inception won four Oscars in the 83rd Academy Awards, 
-                tying the year's Best Picture winner, The King's Speech as the most-awarded film of the year.</h1>
-          </div>
-          <div class="award">
-            <h1>WARNER BROS. ENTERTAINMENT INC. is a fully integrated, broad-based entertainment company and a global leader in the creation,
-               production, distribution, licensing and marketing of all forms of entertainment and their related businesses. 
-               A WarnerMedia company, the Studio is home to one of the most successful collections of brands in the world and stands at 
-               the forefront of every aspect of the entertainment industry, from feature film, television and home entertainment production 
-               and worldwide distribution to DVD and Blu-ray, digital distribution, animation, comic books, videogames, product and 
-               brand licensing, and broadcasting. The company’s vast library, one of the most prestigious and valuable in the world, 
-               consists of more than 114,000 hours of programming, including 10,000 feature films and 2,400 television programs 
-               comprised of more than 120,000 individual episodes. Warner Bros.’ employee population ranges from 5,000 to 10,000 
-               on any given day in North America (depending on the level of television and movie production) and some 2,000 employees overseas.</h1>
-          </div>
-          <div class="award">
-            <h1>]Henry Cavill has received a nomination for the 2018 Teen Choice Awards for his role as Superman in the “Justice League” movie. 
-              Nominated in the Action Movie Actor category, Henry finds himself up against Chris Evans (“Avengers: Infinity War”), 
-              Dylan O’Brien (“Maze Runner: Death Cure”), John Boyega (“Pacific Rim: Uprising”), Tom Holland (“Avengers: Infinity War”), 
-              and Robert Downey Jr. (“Avengers: Infinity War”).</h1>
-          </div>
-        </div>
-      </div>
-      <div id = "subscribe">
-        <div class = "subscribe-text">Subscribe to Our Production</div>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input
-            name="email"
-            id="email"
-            type="email"
-            placeholder="Enter your email"
-            required
+<body>
+  <div id = 'page-wrapper'>
+    <div class = "top-section">
+      <header id='header'>
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://vo.shgstatic.com/dev/public/article/WarnerBros-Logo-OLD.png"
+            alt="Company logo"
           />
-          <input id="submit" type="submit" value="Subscribe" class="btn" />  
-        </form>
+          <div class="brand-name">Warner Bros Pictures</div>
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#vedio-section">Trending</a></li>
+            <li><a class="nav-link" href="#movie-section">Movies</a></li>
+            <li><a class="nav-link" href="#award-section">Achievements</a></li>
+            <li><a class="nav-link" href="#page-wrapper">Home</a></li>
+          </ul>
+        </nav> 
+      </header>
+      <hr class="seperator">
+    </div>
+
+    <div id="slideshow">
+
+      <div class="Slides fade" id="kong">
+        <img src="https://irs.www.warnerbros-india.com/hero-banner-v2-tablet-jpeg/movies/media/browser/Godzilla_vs_Kong_hero_0.jpg">
+        <div class="text">Coming Soon</div>
       </div>
-      <div id = "details-section">
-        <hr>
-        <div class="details">
-          <div class="details-content-1">
-            <div class = det-box>
-              <h1 class= follow-text>Follow us on</h1>
-              <img class = 'icon' src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-128.png">
-              <img class = 'icon' src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/youtube3-128.png">
-              <img class = 'icon' src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-128.png">
-              <img class = 'icon' src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-128.png">
-            </div>
-            <br>
-            <br>
-            <div class = det-box>
-              <img class= 'icon' src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-128.png">
-              <h1 class =mail>9885612345</h1>
-            </div>
-            <br>
-            <div class = det-box>
-              <img class= 'icon' src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-128.png">
-              <h1 class =mail>warnerbros@gmail.com</h1>
-            </div>
-            <br>
-            <div class = det-box>
-              <img class= 'icon' src="https://cdn4.iconfinder.com/data/icons/social-media-2273/64/social_media_network_online_maps-128.png">
-              <h1 class =mail>25/6, 3rd floor, Wall Street, DTLA, USA</h1>
-            </div>
+
+      <div class="Slides fade">
+        <img src="https://irs.www.warnerbros-india.com/hero-banner-v2-tablet-jpeg/banner/media/browser/Mortal_Kombat_Hero_2.jpg">
+        <div class="text">Available in Cinemas near you</div>
+      </div>
+
+      <div class="Slides fade">
+        <img src="https://irs.www.warnerbros-india.com/hero-banner-v2-tablet-png/movies/media/browser/tom_jerry_hero.png">
+        <div class="text">Releasing on 2nd of May</div>
+      </div>
+
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+    </div>
+    <br>
+
+    <div class = "dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <div id = "vedio-section" >
+      <h1>Trending</h1>
+      <div class="vedio-bar">
+        <div class="vedio">
+          <iframe id="video1" src="https://www.youtube.com/embed/odM92ap8_c0" frameborder="0" allowfullscreen></iframe>
+          <h1>Godzilla vs kong Trailer</h1>
+        </div>
+        <div class="vedio">
+          <iframe id="video2" src="https://www.youtube.com/embed/AZGcmvrTX9M" frameborder="0" allowfullscreen></iframe>
+          <h1>Tenet Trailer</h1>
+        </div>
+        <div class="vedio">
+          <iframe id="video3" src="https://www.youtube.com/embed/d2f2bIjvgnI" frameborder="0" allowfullscreen></iframe>
+          <h1>Tom and Jerry Trailer</h1>
+         </div>
+         <div class="vedio">
+          <iframe id="video4" src="https://www.youtube.com/embed/NLOp_6uPccQ" frameborder="0" allowfullscreen></iframe>
+          <h1>The Batman Trailer</h1>
+         </div>
+      </div> 
+    </div>
+
+    <div id="movie-section">
+      <h1>Movies</h1>
+      <div class = movie-bar>
+        <div class="movie">
+          <div class="poster">
+            <img class="mov-pic" src = "https://images-na.ssl-images-amazon.com/images/I/410yY%2BU925L._AC_.jpg">
+            <h1 class="book">Available Soon</h1>
           </div>
-          <div class="details-content-2">
-            <img
-              class="bottom-logo"
-              src="https://vo.shgstatic.com/dev/public/article/WarnerBros-Logo-OLD.png"
-            />
-            <h1 class="company-name">Warner Bros Pictures</h1>
-            <h1 class="rights">© Copyright 2021. All Rights Reserved.</h1>
+          <h1>Dunkirk 2021</h1>
+        </div>
+        <div class="movie">
+          <div class="poster">
+            <img class="mov-pic" src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQr8TLcGyFZmLsJSNZ3M_8CO2M9YbnucnpGTs6u2erH-SveV1O2">
+            <h1 class="book">Book Tickets</h1>
           </div>
-          <div class="details-content-3">
-            <h1 class="mail-2">About Us</h1>
-            <h1 class= mail-2>Careers</h1>
-            <h1 class="mail-2">International</h1>
-            <h1 class="mail-2">Privacy Policy</h1>
-            <h1 class="mail-2">Copyright Policy</h1>
-            <h1 class="mail-2">Terms of Use</h1>
+          <h1>Justice League 2016</h1>
+        </div>
+        <div class="movie">
+          <div class="poster">
+            <img class="mov-pic" src = "https://static1.colliderimages.com/wordpress/wp-content/uploads/inception_poster_alternate-405x600.jpg?q=50&fit=crop&w=405&dpr=1.5">
+            <h1 class="book">Book Tickets</h1>
           </div>
+          <h1>Inception 2010</h1>
+        </div>
+        <div class="movie">
+          <div class="poster">
+            <img class="mov-pic" src = "https://www.joblo.com/assets/images/joblo/posters/2019/08/joker-poster-main2.jpg">
+            <h1 class="book">Book Tickets</h1>
+          </div>
+          <h1>Joker 2020</h1>
+        </div>
+        <div class="movie">
+          <div class="poster">
+            <img class="mov-pic" src = "https://m.media-amazon.com/images/M/MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_.jpg">
+            <h1 class="book">Available Soon</h1>
+          </div>
+          <h1>Gravity 2018</h1>
         </div>
       </div>
     </div>
-  </body>
+
+    <div id = "award-section">
+      <h1>Achievements</h1>
+      <div class="award-bar">
+        <div class="award">
+          <h1>Joaquin Phoenix has won the Academy Award for Best Actor thanks to his acclaimed performance in Todd Phillips’ 
+            “Joker.” The revisionist comic book drama stars Phoenix as Arthur Fleck, a social outcast whose shattered dreams of 
+            being a hit stand-up comedian lead him down a dark path to becoming the infamous Batman villain. Phoenix’s Oscar makes 
+            him the second performer to win an Academy Award for playing the Joker after Heath Ledger, who won the Best Supporting 
+            Actor trophy for playing the character in Christopher Nolan’s “The Dark Knight.” “Joker’ received a total of 11 Oscar nominations, 
+            including Best Picture and Best Director, making it the most nominated film at the 92nd Academy Awards. With Phoenix’s win, 
+            it has claimed two statuettes: “Joker” composer Hildur Guðnadóttir won the Oscar for Best Original Score.</h1>
+        </div>
+        <div class="award">
+          <h1>Inception is a 2010 science fiction heist film written, co-produced, and directed by Christopher Nolan. 
+            The film features an ensemble cast of Oscar nominees and winners such as Leonardo DiCaprio, Marion Cotillard, Elliot Page,
+             and Michael Caine as they travel into the unconscious minds of other people to secretly extract valuable commercial
+              information while the target is asleep and dreaming. Inception won four Oscars in the 83rd Academy Awards, 
+              tying the year's Best Picture winner, The King's Speech as the most-awarded film of the year.</h1>
+        </div>
+        <div class="award">
+          <h1>WARNER BROS. ENTERTAINMENT INC. is a fully integrated, broad-based entertainment company and a global leader in the creation,
+             production, distribution, licensing and marketing of all forms of entertainment and their related businesses. 
+             A WarnerMedia company, the Studio is home to one of the most successful collections of brands in the world and stands at 
+             the forefront of every aspect of the entertainment industry, from feature film, television and home entertainment production 
+             and worldwide distribution to DVD and Blu-ray, digital distribution, animation, comic books, videogames, product and 
+             brand licensing, and broadcasting. The company’s vast library, one of the most prestigious and valuable in the world, 
+             consists of more than 114,000 hours of programming, including 10,000 feature films and 2,400 television programs 
+             comprised of more than 120,000 individual episodes. Warner Bros.’ employee population ranges from 5,000 to 10,000 
+             on any given day in North America (depending on the level of television and movie production) and some 2,000 employees overseas.</h1>
+        </div>
+        <div class="award">
+          <h1>]Henry Cavill has received a nomination for the 2018 Teen Choice Awards for his role as Superman in the “Justice League” movie. 
+            Nominated in the Action Movie Actor category, Henry finds himself up against Chris Evans (“Avengers: Infinity War”), 
+            Dylan O’Brien (“Maze Runner: Death Cure”), John Boyega (“Pacific Rim: Uprising”), Tom Holland (“Avengers: Infinity War”), 
+            and Robert Downey Jr. (“Avengers: Infinity War”).</h1>
+        </div>
+      </div>
+    </div>
+    <div id = "subscribe">
+      <div class = "subscribe-text">Subscribe to Our Production</div>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input id="submit" type="submit" value="Subscribe" class="btn" />  
+      </form>
+    </div>
+    <div id = "details-section">
+      <hr>
+      <div class="details">
+        <div class="details-content-1">
+          <div class = det-box>
+            <h1 class= follow-text>Follow us on</h1>
+            <img class = 'icon' src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-128.png">
+            <img class = 'icon' src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/youtube3-128.png">
+            <img class = 'icon' src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-128.png">
+            <img class = 'icon' src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-128.png">
+          </div>
+          <br>
+          <br>
+          <div class = det-box>
+            <img class= 'icon' src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-128.png">
+            <h1 class =mail>9885612345</h1>
+          </div>
+          <br>
+          <div class = det-box>
+            <img class= 'icon' src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-128.png">
+            <h1 class =mail>warnerbros@gmail.com</h1>
+          </div>
+          <br>
+          <div class = det-box>
+            <img class= 'icon' src="https://cdn4.iconfinder.com/data/icons/social-media-2273/64/social_media_network_online_maps-128.png">
+            <h1 class =mail>25/6, 3rd floor, Wall Street, DTLA, USA</h1>
+          </div>
+        </div>
+        <div class="details-content-2">
+          <img
+            class="bottom-logo"
+            src="https://vo.shgstatic.com/dev/public/article/WarnerBros-Logo-OLD.png"
+          />
+          <h1 class="company-name">Warner Bros Pictures</h1>
+          <h1 class="rights">© Copyright 2021. All Rights Reserved.</h1>
+        </div>
+        <div class="details-content-3">
+          <h1 class="mail-2">About Us</h1>
+          <h1 class= mail-2>Careers</h1>
+          <h1 class="mail-2">International</h1>
+          <h1 class="mail-2">Privacy Policy</h1>
+          <h1 class="mail-2">Copyright Policy</h1>
+          <h1 class="mail-2">Terms of Use</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -14,10 +14,13 @@ const checkCashRegister = (price, cash, cid) => {
     for (let element of cid) {
       totalCID += element[1];
     }
+    
     totalCID = totalCID.toFixed(2);
     let changeToGive = cash - price;
+    console.log(changeToGive, totalCID);
     const changeArray = [];
     if (changeToGive > totalCID) {
+      console.log(changeToGive, totalCID);
       return { status: "INSUFFICIENT_FUNDS", change: changeArray };
     } else if (changeToGive.toFixed(2) === totalCID) {
       return { status: "CLOSED", change: cid };
@@ -25,13 +28,20 @@ const checkCashRegister = (price, cash, cid) => {
       cid = cid.reverse();
       for (let elem of cid) {
         let temp = [elem[0], 0];
-        while (changeToGive >= UNIT_AMOUNT[elem[0]] && elem[1] > 0) {
-          temp[1] += UNIT_AMOUNT[elem[0]];
-          elem[1] -= UNIT_AMOUNT[elem[0]];
-          changeToGive -= UNIT_AMOUNT[elem[0]];
-          changeToGive = changeToGive.toFixed(2);
+        if(UNIT_AMOUNT[elem[0]]===undefined){
+          console.log('errror: Currency Not Found');
+          continue;
         }
-        if (temp[1] > 0) {
+        let NoOfNotesPresent = Math.floor(elem[1]/UNIT_AMOUNT[elem[0]]);
+        let NoOfNotesRequired = Math.floor(changeToGive/UNIT_AMOUNT[elem[0]]);
+        let NoOfNotes = NoOfNotesRequired;
+        if(NoOfNotesPresent < NoOfNotes){
+          NoOfNotes = NoOfNotesPresent
+        }
+        if(NoOfNotes > 0) {
+          temp[1] = NoOfNotes*UNIT_AMOUNT[elem[0]];
+          changeToGive -= temp[1];
+          changeToGive = changeToGive.toFixed(2);
           changeArray.push(temp);
         }
       }
@@ -42,9 +52,7 @@ const checkCashRegister = (price, cash, cid) => {
     return { status: "OPEN", change: changeArray};
   }
 
-
-  /*console.log(checkCashRegister(19.5, 20, [["PENNY", 1.01], 
-  ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], 
-  ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]))*/
-
-  //Output for above test case is {status: "OPEN", change: [["QUARTER", 0.5]]}
+  /*console.log(checkCashRegister(3.26, 100, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]))*/
+/*Required Output
+{status: "OPEN", change: [["TWENTY", 60], ["TEN", 20], ["FIVE", 15], ["ONE", 1], ["QUARTER", 0.5], ["DIME", 0.2], ["PENNY", 0.04]]}
+*/
